@@ -9,7 +9,8 @@ const logInUser = async (req: Request, res: Response) => {
         return res.status(200).json({
             success: true,
             message: "create user successfully",
-            data: result.rows[0]
+            token:result.token,
+            data: result.user
         })
     } catch (error: any) {
         return res.status(501).json({
