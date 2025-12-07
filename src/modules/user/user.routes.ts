@@ -1,5 +1,4 @@
-import { Request, Response, Router } from "express";
-import { pool } from "../../database/db";
+import {  Router } from "express";
 import { userController } from "./user.controller";
 
 
